@@ -1,13 +1,14 @@
 
 import './App.css'
 import Counter from './hooks/Counter.jsx'
+import UseEffect from './hooks/UseEffect.jsx'
 
 
 function App() {
   return(
     <>
-    <p>Hello</p>
-  <Counter/>
+    {/* <Counter/> */}
+    <UseEffect/>
   </>
   )
   
