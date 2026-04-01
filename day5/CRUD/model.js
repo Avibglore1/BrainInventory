@@ -6,4 +6,6 @@ const userSchema = new mongoose.Schema({
     age: Number,
 },{timestamps: true})
 
+userSchema.index({email: 1});
+
 export default mongoose.model("User", userSchema);

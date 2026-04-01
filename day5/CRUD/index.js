@@ -24,6 +24,13 @@ app.delete("/users/:id", async(req,res)=>{
     await User.findByIdAndDelete(req.params.id)
 })
 
+app.get("/stats", async(req,res)=>{
+    const data = await User.aggregate([
+        {$group: {_id: "$age", count: {$sum:1}}}
+    ]);
+    res.json(data);
+})
+
 app.listen(4000,()=>{
     console.log(`Server running at port 4000`)
 })
