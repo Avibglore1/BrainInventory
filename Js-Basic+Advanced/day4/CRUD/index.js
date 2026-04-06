@@ -38,4 +38,4 @@ app.delete("/users/:id",(req,res)=>{
     res.json({message: "Deleted",users})
 })
 
-app.listen(3000, ()=>console.log("Server running"));
+app.listen(3000, "0.0.0.0", ()=>console.log("Server running on port 3000"));
