@@ -2,7 +2,7 @@
 
 services:
   db:
-    image: postgres:16   # latest PostgreSQL image
+    image: postgres:15   # latest PostgreSQL image
     container_name: pg_container
     restart: always
     environment:
