@@ -10,4 +10,4 @@ const taskSchema = new mongoose.Schema({
     assignedTo: String
 })
 
-export default mongoose.model(TaskController, taskSchema);
+export default mongoose.model("Task", taskSchema);
